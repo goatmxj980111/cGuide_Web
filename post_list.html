@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 부트스트랩 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <style>
+      #NOTICE_top{width:100%;height:40px;background:#606060}
+      #NOTICE_top .row .icon{text-align:center;margin-top:10px;}
+      #NOTICE_top .row .text{text-align:center;margin-top:10px;color:#ffffff;}
+      #POST_list {width:100%;height:55px;margin:5px;padding-bottom: 2px; border-bottom: 2px solid #f5f5f5;}
+      #POST_list .Category{font-size:15px;color:#ec6762;font-weight:500;}
+      #POST_list .title{font-size:15px;color:#000000;font-weight:500;}
+      #POST_list .Date{font-size:15px;color:#606060;font-weight:500;}
+    </style>
+    <title></title>
+  </head>
+  <title>POST_LIST</title>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>-->
+  <body>
+    <div id="NOTICE_top" class="container-fluid">
+      <div class="row">
+        <div class="col-xs-1">
+            <div class="icon">
+              <!--메인 메뉴로 돌아가기-->
+              <a href="#">
+              <img src="C:\Users\김준섭\Documents\카카오톡 받은 파일\img\noun_Exit_1016641.png" style="width:30px;">
+              </a>
+            </div>
+        </div>
+        <div class="col-xs-10">
+          <div class="text">
+            Notice
+          </div>
+        </div>
+        <div class="col-xs-1">
+          <!--글쓰기 주소-->
+          <a href="content://0@media/external/file/9738"><div class="icon">
+            <img src="C:\Users\김준섭\Documents\카카오톡 받은 파일\img\pen.png" style="width:30px;">
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!--미리보기 구성-->
+  <body>
+    <form action = "content://0@media/external/file/9760" method = "post" enctype="multipart/form-data">
+    <div id="POST_list" class="container-fluid">
+      <div class="row">
+        <div class="Category col-xs-3">
+          [공지]
+        </div>
+        <!--해당 제목 게시물 주소참조-->
+        <a href="content://0@media/external/file/9760"><div class="title col-xs-9">
+          시가이드 웹사이트 출시 안내
+        </div></a>
+      </div>
+      <input type="hidden" name="NOTICE_NUMBER"/>
+      <div class="Date">
+          2019-01-07
+      </div>
+    </div>
+  </body>
+
+</html>
